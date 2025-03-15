@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+     <link rel="stylesheet" href="style2.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&" />
+</head>
+<body>
+    <div class="content">
+        <div class="top-bar">
+            <span class="material-symbols-rounded">expand_more</span>
+            <span>Now Playing</span>
+            <span class="material-symbols-rounded">more_horiz</span>
+        </div>
+        <div class="image-wrapper">
+            <div class="music-image">
+                <img src="images/img3.jpg" alt="Music cover">
+            </div>
+        </div>
+        <div class="music-titles">
+            <p class="name">Solo - Jennie</p>
+            <p class="artist">Jennie</p>
+        </div>
+        <div class="progress-details">
+            <div class="progress-bar">
+                <span></span>
+            </div>
+            <div class="time">
+                <span class="current">0:00</span>
+                <span class="final">3:49</span>
+            </div>
+        </div>
+        <div class="control-btn">
+            <span class="material-symbols-rounded" id="repeat">repeat</span>
+            <span class="material-symbols-rounded" id="prev">skip_previous</span>
+            <div class="play-pause">
+                <span class="material-symbols-rounded">play_arrow</span>
+            </div>
+            <span class="material-symbols-rounded" id="next">skip_next</span>
+            <span class="material-symbols-rounded" id="shuffle">shuffle</span>
+        </div>
+    </div>
+
+    <audio src="music/SOLO(128k).mp3" class="main-song"></audio>
+
+
+    <script src="playlist.js"></script>
+    <script src="script1.js"></script>
+</body>
+</html>
