@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Image Gallery</h1>
+    <div class="full-img" id="fullImgBox">
+        <img src="https://static.uwalls.ie/products/96000/96241/u97555pig1ms_900.webp" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+        <img src="https://static.uwalls.ie/products/96000/96241/u97555pig1ms_900.webp" onclick="openFullImg(this.src)">
+        <img src="https://decorate.pk/cdn/shop/products/613TCkccfAS._AC_SL1200.jpg?v=1673212328" onclick="openFullImg(this.src)">
+        <img src="https://m.media-amazon.com/images/I/71NvSWFZE8L.jpg" onclick="openFullImg(this.src)">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqklgyLbTFNpYRnPd_uwCNNmnRI50WEfuemg&s" onclick="openFullImg(this.src)">
+        <img src="https://images.chinahighlights.com/allpicture/2022/04/ef3ffd023d184272a99401d7_cut_600x550_79_1737563042.jpg" onclick="openFullImg(this.src)">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/tv-wall-ideas-media-wall-bild-c-tv-loewe-66c51a2e81fd3.png?crop=1xw:1xh;center,top&resize=980:*" onclick="openFullImg(this.src)">
+        <img src="https://s.alicdn.com/@sc04/kf/H7a0da412800b469292a4c0c995377f13S.jpg" onclick="openFullImg(this.src)">
+        <img src="https://img.drz.lazcdn.com/static/pk/p/bcd1d780f2564c252e5c8d2f1e2ef5d0.jpg_720x720q80.jpg" onclick="openFullImg(this.src)">
+        <img src="https://static.uwalls.ie/products/96000/96241/u97555pig1ms_900.webp" onclick="openFullImg(this.src)">
+    </div>
+
+<script>
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+function openFullImg(pic){
+    fullImgBox.style.display = "flex";
+    fullImg.src = pic;
+}
+function closeFullImg(){
+    fullImgBox.style.display = "none";
+}
+
+</script>
+</body>
+</html>
